@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+}
+
+img {
+  float: left;
+  padding: 10px;
+  margin: 10px;
+}
+
+hr {
+  clear: left;
+  display: block;
+}
+
+.container-title {
+  padding-top: 15px;
+  margin: 0px;
+}
+
+.container-author {
+  margin: 0px;
+}
+
+.container-body {
+  margin: 0px;
+}
