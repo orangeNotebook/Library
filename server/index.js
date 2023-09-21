@@ -35,6 +35,13 @@ app.post("/addItem", async (req, res) => {
   }
 });
 
+app.delete("/removeItem/:id", async (req, res) => {
+  const id = req.params.id;
+
+  await BookModel.findByIdAndRemove(id).exec();
+  res.send("Deleted");
+});
+
 app.get("/getAllItems", async (req, res) => {
   BookModel.find({})
     .then((foundItems) => {
